@@ -1,33 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --main-bg-color: #f5f5f5;
   font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 3rem);
-  font-family: 'Montserrat', "Roboto", sans-serif;
+  font-family: "Montserrat", "Roboto", sans-serif;
 }
-a{
-    text-decoration: none; /* remove o sublinhado dos links */
-    color: black; /* altera a cor de todos os links das páginas */
-}
-
-h1, h2, h3, h4, h5, h6{
-   font-family: "Roboto", sans-serif;
+a {
+  text-decoration: none; /* remove o sublinhado dos links */
+  color: black; /* altera a cor de todos os links das páginas */
 }
 
-body{
- background-color: var(--main-bg-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
 }
 
 /************************
  HEADER         
-*************************/       
+*************************/
 
-header nav{
+header nav {
   display: flex;
   justify-content: center;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   gap: 30px;
   border: 1px solid #e5e5e5;
@@ -36,29 +41,106 @@ header nav ul{
   padding: 2px;
 }
 
-header nav ul li a{
+header nav ul li a {
   padding: 10px 20px;
   border-radius: 20px;
   display: block;
 }
 
-header nav ul li a.atual{
+header nav ul li a.atual {
   background-color: black;
   color: white;
 }
 
+
 /************************
  BANNER      
-*************************/    
+*************************/
 
-section.banner{
-  display: flex;
-  margin:0 auto 0 auto;
+section.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw auto 0 auto;
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
-section.banner h1{
-  width: 50%;
-  font-size: 2.2em;
+section.banner h1 {
+  /*width: 50%;*/
+  font-size: 2.2rem;
 }
+
+section.banner span{
+  font-weight: bold;
+}
+section.banner p.gray{
+ color: #757575;
+}
+
+/************************
+ POSTS    
+*************************/
+
+section.posts {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+section.posts ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+section.posts > ul > li {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgb(158, 158, 158);
+  padding: 1vw;
+}
+section.posts > ul > li h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section.posts > ul > li p {
+  line-height: 1.8rem;
+  color: #757575;
+}
+section.posts > ul > li ul {
+  display: flex;
+  gap: 20px;
+}
+section.posts > ul > li ul li {
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+footer {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1vw;
+  color: #7c7c7c;
+  border: 1px solid #e5e5e5;
+}
+
+/************************
+ PRODUCTS    
+*************************/
+
+section.eco{
+  background-color: white;
+  margin: 3vw;
+  padding: 1vw;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+
+
+
